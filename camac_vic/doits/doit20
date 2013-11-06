@@ -1,0 +1,66 @@
+#
+#
+#  bash script for running camacdaq 20 times
+#  with 15 minute wait between runs
+#
+#
+
+./camacDaq
+mv acquisition.root bi_data/data_0361.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0362.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0363.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0364.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0365.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0366.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0367.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0368.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0369.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0370.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0371.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0372.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0373.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0374.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0375.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0376.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0377.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0378.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0379.root
+sleep 900
+./camacDaq
+mv acquisition.root bi_data/data_0380.root

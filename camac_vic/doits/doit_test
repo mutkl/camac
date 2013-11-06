@@ -1,0 +1,34 @@
+#	shell script for running camacDaq
+#
+#	2011 DMS
+#
+#!/bin/bash
+COMPLETE=0
+#while [ true ]; do
+ I=$1
+ COUNTER=1
+ while [  $COUNTER -le $I  -a  $COUNTER -le 9  ]; do
+  ./camacDaq
+  mv acquisition.root bashtest/data_00$COUNTER.root
+  echo data_00$COUNTER.root
+
+  let COUNTER=COUNTER+1
+ sleep 1
+ done
+ while [  $COUNTER -le $I  -a  $COUNTER -le 99  ]; do
+
+  ./camacDaq
+  mv acquisition.root bashtest/data_0$COUNTER.root
+  echo data_0$COUNTER.root
+  let COUNTER=COUNTER+1
+ sleep 1
+ done
+ while [  $COUNTER -le $I ]; do
+  ./camacDaq
+  mv acquisition.root bashtest/data_$COUNTER.root
+  echo data_$COUNTER.root
+  let COUNTER=COUNTER+1
+ sleep 1
+ done
+ let COMPLETE=COMPLETE+1
+ echo cacacDaq runs: $I

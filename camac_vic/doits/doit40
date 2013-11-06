@@ -1,0 +1,127 @@
+#
+#
+#  bash script for running camacdaq 40 times
+#  with 15 minute wait between runs
+#
+#
+
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_041.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_042.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_043.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_044.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_045.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_046.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_047.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_048.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_049.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_050.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_051.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_052.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_053.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_054.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_055.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_056.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_057.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_058.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_059.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_060.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_061.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_062.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_063.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_064.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_065.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_066.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_067.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_068.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_069.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_070.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_071.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_072.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_073.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_074.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_075.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_076.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_077.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_078.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_079.root
+sleep 900
+./camacDaq
+mv acquisition.root old_led_stable/old_led_data_080.root
+

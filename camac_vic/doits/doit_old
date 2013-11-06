@@ -1,0 +1,246 @@
+#
+#   shell script for running camacdaq a bunch
+#
+#
+
+./camacDaq
+mv acquisition.root data_0241.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0242.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0243.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0244.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0245.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0246.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0247.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0248.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0249.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0250.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0251.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0252.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0253.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0254.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0255.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0256.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0257.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0258.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0259.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0260.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0261.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0262.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0263.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0264.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0265.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0266.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0267.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0268.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0269.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0270.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0271.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0272.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0273.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0274.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0275.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0276.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0277.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0278.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0279.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0280.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0281.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0282.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0283.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0284.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0285.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0286.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0287.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0288.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0289.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0290.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0291.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0292.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0293.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0294.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0295.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0296.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0297.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0298.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0299.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0300.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0301.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0302.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0303.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0304.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0305.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0306.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0307.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0308.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0309.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0310.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0311.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0312.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0313.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0314.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0315.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0316.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0317.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0318.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0319.root
+sleep 900
+./camacDaq
+mv acquisition.root data_0320.root
+
+
