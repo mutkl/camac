@@ -210,8 +210,8 @@ int readFile(FILE *g_rfp, char *filename, char charBuff[], int charBuffsize)
 **  ======================================================================== */
 /*									     */
 
-static char *devtble[] =   {"/dev/sga",   /* scsi generic devices */
-			    "/dev/sgb",
+static char *devtble[] =   {"/dev/sg0",   /* scsi generic devices */
+			    "/dev/sg1",
 			    "/dev/sgc",
 			    "/dev/sgd",
 			    "/dev/sge",

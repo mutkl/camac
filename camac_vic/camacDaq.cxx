@@ -62,7 +62,10 @@ int open_camac (void)
     {
       perror ("cdchn error (2)") ;
       return (2) ;
-    }
+    } else {
+    std::cout << "open_camac success: cdchn (branch, 1, 0) &1): " << (cdchn (branch, 1, 0) &1) << std::endl;
+    std::cout << std::endl;
+  }
   
   /* set the controller type */
   ccctype(branch,0,1); /* parallel - Jor 73A is considered parallel */
@@ -84,7 +87,7 @@ void caminit (void)
   cccc (ext);
   cccz (ext);
   ccci (ext, FALSE);
-  std::cout<<" finished initialising with code "<<ext<<std::endl;
+  //std::cout<<" finished caminit  with code "<<ext<<std::endl;
 }
 
 
@@ -97,7 +100,7 @@ int adcRead(u_int16_t* buffer)
     {
       //      std::cout<<" about to read ADC "<<std::endl;
       cssa (0, ext2249[subaddr], &buffer[subaddr], &qresponse);
-      //std::cout<<" read the adc q value: "<<qresponse<<std::endl;
+      //      std::cout<<" read the adc q value: "<<qresponse<<std::endl;
     }
   return(0);
 }
@@ -153,7 +156,7 @@ int waitForLAM(int ext)
 	else
 	  {
             usleep (1) ;
-	    std::cout<<" sleeping now, npolls "<<npolls<<" qresponse "<<qresponse<<std::endl;
+	    //std::cout<<" sleeping now, npolls "<<npolls<<" qresponse "<<qresponse<<std::endl;
 	  }
 	if(npolls > 100)caminit();
       }
@@ -251,7 +254,9 @@ int main(int argc, char* argv[])
     int elapsed;
 
     TFile *file = new TFile("acquisition.root","RECREATE");
-    TApplication* rootapp = new TApplication("example",&argc, argv); 
+    //vic: unused
+    //TApplication* rootapp = new TApplication("example",&argc, argv); 
+    //vic: unused
 
     //create the ROOT tree to store the data
     char branchname[20];
@@ -347,15 +352,19 @@ int main(int argc, char* argv[])
     if (useADC == 1) 
       
       {
-	  slot2249 = kvpGetInt("slot2249", 0);
-	  if (slot2249 == 0) 
+	printf("\n\nyou are using ADC\n\n");
+	slot2249 = kvpGetInt("slot2249", 0);
+	printf("its in slot: %d\n\n", slot2249);
+	if (slot2249 == 0) 
 	      {
 		fprintf(stderr, "ERROR: slot2249 not defined!\n");
 		return(EXIT_FAILURE);
 	      }
 	  for (channel = 0; channel<NCHAN_2249; channel++) 
 	      {
-		  cdreg (&ext2249[channel], branch, crate, slot2249, channel);
+		printf("channel:  %d",channel);
+		printf("  cdreg: %d\n", cdreg (&ext2249[channel], branch, crate, slot2249, channel));
+		
 	      }
       }
     useTDC = kvpGetInt("useTDC", 0);
@@ -403,7 +412,7 @@ int main(int argc, char* argv[])
     
     open_camac();
     caminit();
-    
+    printf("just initialized slot ext2249[0]: %d\n" ,ext2249[0]);
     runActive = TRUE;
     eventNumber = 0;
     if (runTime != 0) 
@@ -418,9 +427,10 @@ int main(int argc, char* argv[])
 	    
 	    if (useADC  == 1) 
 	        {
-		    waitForLAM(ext2249[0]);
-		    adcRead(adcValues);
-		    adcClear();
+		  
+		  waitForLAM(ext2249[0]);
+		  adcRead(adcValues);
+		  adcClear();
 		}
 	    
 	    if (useTDC) 
@@ -440,7 +450,7 @@ int main(int argc, char* argv[])
 			    end = time(NULL);
 			    elapsed = (end - start);
 			    std::cout << "Event: " << eventNumber 
-				      << "     Rate: " << (double)eventNumber/elapsed 
+				      << "Rate: " << (double)eventNumber/elapsed 
 				      << " Hz" << std::endl;
 			    /*
 			      ofstream timeout;

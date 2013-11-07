@@ -39,17 +39,18 @@ unsigned int cssa  (int 	fun,
 
 	/* Complete encoding address with function - 
 	   ext_add has crate, slot, and subaddress */
-
+  //printf("in cssa\n");
   *qres = 0;
-
+  //printf("ext_add: %d\n",ext_add);
   branch = ext_add>>24;
-
+  //printf("branch: %d\n",branch);
+  //printf("fun: %d\n",fun);
   errno = 0;
-
+  
   if( fun < 0x8 ) {
-  	cmd = (ext_add & 0x00FFFFFF) | (fun <<24) | (SJY_STOP_ON_WORD<<16);
-	sjy_read(branch, cmd, &locdat[0], sizeof(unsigned short));
-	*data16 = locdat[0];
+    cmd = (ext_add & 0x00FFFFFF) | (fun <<24) | (SJY_STOP_ON_WORD<<16);
+    sjy_read(branch, cmd, &locdat[0], sizeof(unsigned short));
+    *data16 = locdat[0];
         }
   else if( fun & 0x8 ) {
   	cmd = (ext_add & 0x00FFFFFF) | (fun <<24);

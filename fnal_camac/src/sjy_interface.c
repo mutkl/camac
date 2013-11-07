@@ -420,7 +420,7 @@ static int handle_scsi_cmd(       int branch,          /* CAMAC branch */
      int cmdsize;
      int status;
 
-
+     //printf("in sjy_read");
      bzero(cmd, CMD_SIZE);     /* clear cmd for case of short transfers */
 
 #ifdef SJY411S

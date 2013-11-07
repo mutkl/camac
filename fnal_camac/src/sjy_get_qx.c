@@ -6,7 +6,18 @@ int sjy_get_qx(int branch){
 
 unsigned char	*buf;
 int    *perrno = &sjy_controller[IDX(branch)].errn;
-
+//printf("branch: %d",branch);
+ //printf(" error is: %d\n",*perrno);
+/* printf("ENODEV: %d\n",ENODEV);
+   printf("EPIPE: %d\n",EPIPE);
+   printf("EIO: %d\n",EIO);
+   printf("EFAULT: %d\n",EFAULT);
+*/
+/* ENODEV: 19
+   EPIPE: 32
+   EIO: 5
+   EFAULT: 14
+*/
 if(*perrno == 0){			/* all OK */
 	ieee_last_Q=1;
 	ieee_last_X=1;
